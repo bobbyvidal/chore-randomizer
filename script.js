@@ -1,5 +1,5 @@
-/* If you're feeling fancy you can add interactivity 
-    to your site with Javascript */
+let submitButton = document.querySelector("#submitButton")
 
-// prints "hi" in the browser's dev tools console
-console.log('hi');
+submitButton.addEventListener("submit", function() {
+  console.log('hi')
+})
