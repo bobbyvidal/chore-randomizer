@@ -1,9 +1,12 @@
 let submitButton = document.querySelector("#submitButton")
 let textField = document.querySelector("#textField")
 
+let choresArray = []
+
 submitButton.addEventListener("click", function(e) {
   e.preventDefault();
-  console.log('hi');
+  choresArray.push(textField.value)
   textField.value = ''
-  console.log('text field cleared');
+  console.log(choresArray)
 })
+
