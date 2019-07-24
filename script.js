@@ -1,5 +1,9 @@
 let submitButton = document.querySelector("#submitButton")
+let textField = document.querySelector("#textField")
 
-submitButton.addEventListener("submit", function() {
-  console.log('hi')
+submitButton.addEventListener("click", function(e) {
+  e.preventDefault();
+  console.log('hi');
+  textField.value = ''
+  console.log('text field cleared');
 })
