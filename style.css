@@ -1,6 +1,7 @@
 /* CSS files add styling rules to your content */
 
 body {
+  text-align: center;
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
   margin: 2em;
 }
@@ -8,4 +9,8 @@ body {
 h1 {
   font-style: italic;
   color: #373fff;
+}
+div {
+  background-image: url('https://cdn.glitch.com/48a845d6-c1b6-4462-b5b5-feaab3b4303c%2Fchores-cleaning.jpg?v=1564165622532');
+  
 }
