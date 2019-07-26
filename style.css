@@ -11,17 +11,8 @@ h1 {
   font-style: italic;
   color: #373fff;
 }
-#choreArea {
-  background-image: url('https://cdn.glitch.com/48a845d6-c1b6-4462-b5b5-feaab3b4303c%2Fchores-cleaning.jpg?v=1564165622532');
-  width: 75vw;
-  height: 75vh;
-  position:fixed;
-    top: 50%;
-    left: 50%;
-    width:30em;
-    height:18em;
-    margin-top: -9em; /*set to a negative number 1/2 of your height*/
-    margin-left: -15em; /*set to a negative number 1/2 of your width*/
-    border: 1px solid #ccc;
-    background-color: #f3f3f3;
+#choreArea { 
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),
+              0 1px 5px 0 rgba(0,0,0,0.12),
+              0 3px 1px -2px rgba(0,0,0,0.2);
 }
