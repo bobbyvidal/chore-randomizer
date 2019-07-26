@@ -1,6 +1,7 @@
 /* CSS files add styling rules to your content */
 
 body {
+  background-color: white;
   text-align: center;
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
   margin: 2em;
@@ -10,7 +11,17 @@ h1 {
   font-style: italic;
   color: #373fff;
 }
-div {
+#choreArea {
   background-image: url('https://cdn.glitch.com/48a845d6-c1b6-4462-b5b5-feaab3b4303c%2Fchores-cleaning.jpg?v=1564165622532');
-  
+  width: 75vw;
+  height: 75vh;
+  position:fixed;
+    top: 50%;
+    left: 50%;
+    width:30em;
+    height:18em;
+    margin-top: -9em; /*set to a negative number 1/2 of your height*/
+    margin-left: -15em; /*set to a negative number 1/2 of your width*/
+    border: 1px solid #ccc;
+    background-color: #f3f3f3;
 }
