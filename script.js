@@ -7,7 +7,9 @@ let choresArray = []
 
 submitButton.addEventListener("click", function(e) {
   e.preventDefault();
-  choresArray.push(textField.value)
+  if(textField.value.length > 1){
+    choresArray.push(textField.value)
+  }
   textField.value = ''
   console.log(choresArray)
 })
