@@ -8,7 +8,7 @@ let choresArray = []
 
 submitButton.addEventListener("click", function(e) {
   e.preventDefault();
-  if(textField.value.length > 1){
+  if(textField.value.length > 1 || textField.value !== Number){
     choresArray.push(textField.value)
   }
   textField.value = ''
