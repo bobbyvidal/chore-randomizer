@@ -8,7 +8,7 @@ let choresArray = []
 
 submitButton.addEventListener("click", function(e) {
   e.preventDefault();
-  if(textField.value.length > 1 || textField.value !== Number){
+  if(textField.value.length > 1){
     choresArray.push(textField.value)
   }
   textField.value = ''
@@ -19,7 +19,7 @@ randomChoreButton.addEventListener("click", function(e) {
   e.preventDefault();
   let randomChore = choresArray[Math.floor(Math.random() * choresArray.length)];
   console.log(randomChore)
-  if(choresArray.length = 0){
+  if(choresArray.length < 1){
     pickedChore.innerHTML = "Your chores list is empty!"
   }
   else {
