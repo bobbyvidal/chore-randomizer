@@ -19,7 +19,13 @@ randomChoreButton.addEventListener("click", function(e) {
   e.preventDefault();
   let randomChore = choresArray[Math.floor(Math.random() * choresArray.length)];
   console.log(randomChore)
-  pickedChore.innerHTML = randomChore
+  choresArray.splice(choresArray.indexOf(randomChore), 1);
+  if(choresArray.length < 1){
+    pickedChore.innerHTML = "Your chores list is empty!"
+  }
+  else {
+    pickedChore.innerHTML = randomChore
+  }
 })
 
 
