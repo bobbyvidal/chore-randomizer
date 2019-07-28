@@ -1,6 +1,7 @@
 let submitButton = document.querySelector("#submitButton")
 let textField = document.querySelector("#textField")
 let randomChoreButton = document.querySelector("#gimmeRandomChore")
+let pickedChore = document.querySelector("#pickedChore")
 
 let choresArray = []
 
@@ -18,6 +19,7 @@ randomChoreButton.addEventListener("click", function(e) {
   e.preventDefault();
   let randomChore = choresArray[Math.floor(Math.random() * choresArray.length)];
   console.log(randomChore)
+  pickedChore.innerHTML = randomChore
 })
 
 
